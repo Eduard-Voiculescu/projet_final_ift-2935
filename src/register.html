@@ -18,6 +18,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Custom js -->
+    <script src="js/validate.js"></script>
+
     <title>Projet Final IFT-2935</title>
 </head>
 <body>
@@ -30,7 +33,7 @@
 
                 <!-- Page principale -->
                 <li class="nav-item font-weight-bold" >
-                    <a href="page_principale.html" class="nav-link" style="color: black;">Vente-UdeM-Acheteur</a>
+                    <a href="index.html" class="nav-link" style="color: black;">Vente-UdeM-Acheteur</a>
                 </li>
 
             </ul>
@@ -50,10 +53,10 @@
 
         <select name="categories" type="text" x-placement="allo">
             <option value="" disabled selected>Select your category</option>
-            <option value="volvo">Voiture</option>
-            <option value="saab">Meuble</option>
-            <option value="opel">Livre</option>
-            <option value="audi">Nourriture</option>
+            <option value="Voiture">Voiture</option>
+            <option value="Meuble">Meuble</option>
+            <option value="Livre">Livre</option>
+            <option value="Nourriture">Nourriture</option>
         </select>
 
         <span class="input-group-btn">
@@ -70,10 +73,11 @@
     <div class="col col-md-6">
         <h2>Register</h2>
         <br>
-        <form action="" autocomplete="off" class="form-horizontal" method="post" accept-charset="utf-8">
+        <form action="" name="register_form" autocomplete="off" class="form-horizontal" method="post" accept-charset="utf-8"
+              onsubmit="return validateRegisterForm()">
 
             <!-- Email Address-->
-            <input name="email_address_register" placeholder="Email Address" class="form-control" type="text">
+            <input name="email_address_register" placeholder="Email Address" class="form-control" type="email">
             <br>
 
             <!-- Password-->
@@ -86,11 +90,8 @@
             <input name="retype_password_register" placeholder="Re-type Password" class="form-control" type="password">
             <br>
 
-            <span class="input-group-btn">
-                <button class="btn btn-success" type="submit" id="submit_sign_in">
-                    <span class="icon-search">Register</span>
-                </button>
-            </span>
+            <input class="btn btn-success" type="submit" id="submit_sign_in" value="Register"/>
+
         </form>
     </div>
 </div>
