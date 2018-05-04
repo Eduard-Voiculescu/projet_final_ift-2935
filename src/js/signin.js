@@ -13,6 +13,7 @@ function validatureSignIn() {
         alert("Password field cannot be empty");
         return false;
     }
+    return true;
 
     // TODO: Validation avec la base de donnée -> est-ce que l'utilisateur est dans la base ...
 }
