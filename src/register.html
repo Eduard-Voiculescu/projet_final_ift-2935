@@ -47,28 +47,6 @@
 
 <br>
 
-<form action="" autocomplete="off" class="form-horizontal" method="post" accept-charset="utf-8">
-    <div class="input-group container">
-        <input name="searchtext" placeholder="What do you want?" class="form-control" type="text">
-
-        <select name="categories" type="text" x-placement="allo">
-            <option value="" disabled selected>Select your category</option>
-            <option value="Voiture">Voiture</option>
-            <option value="Meuble">Meuble</option>
-            <option value="Livre">Livre</option>
-            <option value="Nourriture">Nourriture</option>
-        </select>
-
-        <span class="input-group-btn">
-            <button class="btn btn-default" type="submit" id="addressSearch">
-                <span class="icon-search">Search</span>
-            </button>
-        </span>
-    </div>
-</form>
-
-<br>
-
 <div class="container">
     <div class="col col-md-6">
         <h2>Register</h2>
@@ -76,12 +54,24 @@
         <form action="" name="register_form" autocomplete="off" class="form-horizontal" method="post" accept-charset="utf-8"
               onsubmit="return validateRegisterForm()">
 
+            <!-- Nom -->
+            <input name="nom_register" placeholder="Nom" class="form-control" type="text">
+            <br>
+
+            <!-- Prenom -->
+            <input name="prenom_register" placeholder="Prénom" class="form-control" type="text">
+            <br>
+
+            <!-- Numéro de Téléphone -->
+            <input name="telephone_register" placeholder="Téléphone" class="form-control" type="number">
+            <br>
+
             <!-- Email Address-->
             <input name="email_address_register" placeholder="Email Address" class="form-control" type="email">
             <br>
 
             <!-- Password-->
-            <h6>Password (at least 8 characters):</h6>
+            <h6>Password (3-11 caracters):</h6>
             <input name="password_register" placeholder="Password" class="form-control" type="password">
             <br>
 
