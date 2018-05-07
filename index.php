@@ -43,8 +43,7 @@ require "includes/user_logged_in_check.php";
 
             </ul>
 
-            <a href="register.html" class="btn btn-success" role="button" style="margin: 10px">Register</a>
-            <a href="sign_in.html" class="btn btn-success" role="button">Sign In</a>
+            <a href="logout.php" class="btn btn-success" role="button" style="margin: 10px">Log out</a>
 
         </div>
     </div>

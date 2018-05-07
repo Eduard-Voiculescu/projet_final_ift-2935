@@ -43,8 +43,8 @@ require 'includes/register_handler.php';
 
             </ul>
 
-            <a href="register.html" class="btn btn-success" role="button" style="margin: 10px">Register</a>
-            <a href="sign_in.html" class="btn btn-success" role="button">Sign In</a>
+            <a href="register.php" class="btn btn-success" role="button" style="margin: 10px">Register</a>
+            <a href="signin.php" class="btn btn-success" role="button">Sign In</a>
 
         </div>
     </div>
@@ -56,7 +56,7 @@ require 'includes/register_handler.php';
     <div class="col col-md-6">
         <h2>Register</h2>
         <br>
-        <form name="register_form" autocomplete="off" class="form-horizontal" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" accept-charset="utf-8"
+        <form name="register_form" autocomplete="off" class="form-horizontal" method="POST" action="register.php" accept-charset="utf-8"
               onsubmit="return validateRegisterForm()">
 
             <!-- Nom -->
